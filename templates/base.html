@@ -1,0 +1,485 @@
+
+{% load static %}
+
+{% url 'website:home' as home_url %}
+{% url 'website:drinks' as drinks_url %}
+{% url 'website:about' as about_url %}
+{% url 'website:gallery' as gallery_url %}
+{% url 'website:contact' as contact_url %}
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <!-- ==================================================
+         BASIC SEO
+    ================================================== -->
+
+    <title>{% block title %}Bierakademie | Bierkultur in Göppingen{% endblock %}</title>
+
+    <meta
+        name="description"
+        content="{% block meta_description %}Bierakademie in der Apothek in Göppingen – mehr als 50 Biersorten, besondere Getränke, Begegnungen und Abende mit Charakter in der Kirchstraße 14.{% endblock %}"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large"
+    >
+
+    <meta
+        name="author"
+        content="Bierakademie"
+    >
+
+    <meta
+        name="theme-color"
+        content="#123b2a"
+    >
+
+
+    <!-- ==================================================
+         CANONICAL URL
+    ================================================== -->
+
+    <link
+        rel="canonical"
+        href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}"
+    >
+
+
+    <!-- ==================================================
+         FAVICON
+    ================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="{% static 'img/bierakademie-emblem.png' %}"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="{% static 'img/bierakademie-emblem.png' %}"
+    >
+
+
+    <!-- ==================================================
+         OPEN GRAPH
+         WhatsApp / Facebook / Messenger
+    ================================================== -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:locale"
+        content="de_DE"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Bierakademie"
+    >
+
+    <meta
+        property="og:title"
+        content="{% block og_title %}Bierakademie | Bierkultur in Göppingen{% endblock %}"
+    >
+
+    <meta
+        property="og:description"
+        content="{% block og_description %}Mehr als Bier: Entdecke besondere Sorten, gute Gespräche und Abende mit Charakter in der Bierakademie in Göppingen.{% endblock %}"
+    >
+
+    <meta
+        property="og:url"
+        content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}"
+    >
+
+    <meta
+        property="og:image"
+        content="{{ request.scheme }}://{{ request.get_host }}{% static 'img/bierakademie-emblem.png' %}"
+    >
+
+    <meta
+        property="og:image:type"
+        content="image/png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Emblem der Bierakademie in Göppingen"
+    >
+
+
+    <!-- ==================================================
+         SOCIAL PREVIEW
+    ================================================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary"
+    >
+
+    <meta
+        name="twitter:title"
+        content="{% block twitter_title %}Bierakademie | Bierkultur in Göppingen{% endblock %}"
+    >
+
+    <meta
+        name="twitter:description"
+        content="{% block twitter_description %}Mehr als 50 Biersorten, besondere Getränke und Abende mit Charakter mitten in Göppingen.{% endblock %}"
+    >
+
+    <meta
+        name="twitter:image"
+        content="{{ request.scheme }}://{{ request.get_host }}{% static 'img/bierakademie-emblem.png' %}"
+    >
+
+    <meta
+        name="twitter:image:alt"
+        content="Emblem der Bierakademie in Göppingen"
+    >
+
+
+    <!-- ==================================================
+         LOCAL BUSINESS STRUCTURED DATA
+    ================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+
+        "@id": "{{ request.scheme }}://{{ request.get_host }}{{ home_url }}#bierakademie",
+
+        "name": "Bierakademie",
+
+        "alternateName": "Bierakademie in der Apothek",
+
+        "description": "Ein besonderer Ort für Bierkultur, vielfältige Getränke, Begegnungen und gemeinsame Abende mitten in Göppingen.",
+
+        "url": "{{ request.scheme }}://{{ request.get_host }}{{ home_url }}",
+
+        "logo": "{{ request.scheme }}://{{ request.get_host }}{% static 'img/bierakademie-emblem.png' %}",
+
+        "image": "{{ request.scheme }}://{{ request.get_host }}{% static 'img/bierakademie-emblem.png' %}",
+
+        "telephone": "+49 7161 77212",
+
+        "menu": "{{ request.scheme }}://{{ request.get_host }}{{ drinks_url }}",
+
+        "hasMap": "https://maps.app.goo.gl/7Kiujtu5v7DHLwdGA",
+
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kirchstraße 14",
+            "postalCode": "73033",
+            "addressLocality": "Göppingen",
+            "addressRegion": "Baden-Württemberg",
+            "addressCountry": "DE"
+        },
+
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+
+                "dayOfWeek": [
+                    "https://schema.org/Sunday",
+                    "https://schema.org/Monday",
+                    "https://schema.org/Tuesday",
+                    "https://schema.org/Wednesday",
+                    "https://schema.org/Thursday"
+                ],
+
+                "opens": "15:00",
+                "closes": "03:00"
+            },
+
+            {
+                "@type": "OpeningHoursSpecification",
+
+                "dayOfWeek": [
+                    "https://schema.org/Friday",
+                    "https://schema.org/Saturday"
+                ],
+
+                "opens": "14:00",
+                "closes": "05:00"
+            }
+        ]
+    }
+    </script>
+
+
+    <!-- ==================================================
+         GLOBAL CSS
+    ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/style.css' %}"
+    >
+
+    {% block extra_css %}
+    {% endblock %}
+
+</head>
+
+
+<body class="{% block body_class %}{% endblock %}">
+
+
+<!-- ==================================================
+     ACCESSIBILITY
+================================================== -->
+
+<a
+    href="#main-content"
+    class="skip-link"
+    style="
+        position: absolute;
+        top: -100px;
+        left: 12px;
+        z-index: 10000;
+        padding: 12px 18px;
+        color: #ffffff;
+        background: #123b2a;
+        border-radius: 5px;
+    "
+    onfocus="this.style.top='12px'"
+    onblur="this.style.top='-100px'"
+>
+    Zum Inhalt springen
+</a>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <!-- BRAND -->
+
+        <a
+            class="brand"
+            href="{{ home_url }}"
+            aria-label="Bierakademie – zur Startseite"
+        >
+
+            <img
+                class="brand-logo"
+                src="{% static 'img/bierakademie-emblem.png' %}"
+                alt=""
+                aria-hidden="true"
+                width="76"
+                height="76"
+            >
+
+            <div class="brand-text">
+
+                <span class="brand-name">
+                    Bierakademie
+                </span>
+
+                <span class="brand-location">
+                    in der Apothek · Göppingen
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- ==================================================
+             MAIN NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="main-nav"
+            id="main-nav"
+            aria-label="Hauptnavigation"
+        >
+
+            <a
+                href="{{ home_url }}"
+                {% if request.resolver_match.url_name == "home" %}
+                class="active"
+                aria-current="page"
+                {% endif %}
+            >
+                Start
+            </a>
+
+
+            <a
+                href="{{ drinks_url }}"
+                {% if request.resolver_match.url_name == "drinks" %}
+                class="active"
+                aria-current="page"
+                {% endif %}
+            >
+                Menü
+            </a>
+
+
+            <a
+                href="{{ about_url }}"
+                {% if request.resolver_match.url_name == "about" %}
+                class="active"
+                aria-current="page"
+                {% endif %}
+            >
+                Bierkultur
+            </a>
+
+
+            <a
+                href="{{ gallery_url }}"
+                {% if request.resolver_match.url_name == "gallery" %}
+                class="active"
+                aria-current="page"
+                {% endif %}
+            >
+                Galerie
+            </a>
+
+
+            <a
+                href="{{ contact_url }}"
+                {% if request.resolver_match.url_name == "contact" %}
+                class="active"
+                aria-current="page"
+                {% endif %}
+            >
+                Kontakt
+            </a>
+
+        </nav>
+
+
+        <!-- ==================================================
+             MOBILE MENU BUTTON
+        ================================================== -->
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Navigation öffnen"
+            aria-controls="main-nav"
+            aria-expanded="false"
+        >
+
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     MAIN CONTENT
+================================================== -->
+
+<main id="main-content" tabindex="-1">
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-inner">
+
+        <!-- FOOTER BRAND -->
+
+        <div class="footer-brand">
+
+            <img
+                class="footer-logo"
+                src="{% static 'img/bierakademie-emblem.png' %}"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                width="68"
+                height="68"
+            >
+
+            <div class="footer-brand-copy">
+
+                <strong class="footer-brand-name">
+                    Bierakademie
+                </strong>
+
+                <span class="footer-brand-subtitle">
+                    in der Apothek
+                </span>
+
+                <p>
+                    Kirchstraße 14 · 73033 Göppingen
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER LINKS -->
+
+        <div class="footer-contact">
+
+            <a href="tel:+49716177212">
+                07161 77 21 2
+            </a>
+
+            <a href="{{ drinks_url }}">
+                Menü
+            </a>
+
+            <a href="{{ contact_url }}">
+                Kontakt &amp; Anfahrt
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script
+    src="{% static 'js/site.js' %}"
+    defer
+></script>
+
+</body>
+</html>

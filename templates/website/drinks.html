@@ -1,0 +1,962 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Getränkekarte | Bierakademie Göppingen{% endblock %}
+
+{% block meta_description %}
+Entdecke die Getränkekarte der Bierakademie in Göppingen:
+mehr als 50 Biersorten, Spirituosen, alkoholfreie Getränke,
+Wein, Kaffee, Tee, kleine Speisen und besondere Entdeckungen.
+{% endblock %}
+
+{% block og_title %}
+Getränkekarte | Bierakademie Göppingen
+{% endblock %}
+
+{% block og_description %}
+Mehr als 50 Biersorten und eine vielfältige Auswahl
+für besondere Abende in der Bierakademie in Göppingen.
+{% endblock %}
+
+{% block twitter_title %}
+Getränkekarte | Bierakademie Göppingen
+{% endblock %}
+
+{% block twitter_description %}
+Bierkultur, Spirituosen, alkoholfreie Getränke,
+Wein, Kaffee, Tee und kleine Speisen.
+{% endblock %}
+
+{% block body_class %}menu-page{% endblock %}
+
+{% block extra_css %}
+<link
+    rel="stylesheet"
+    href="{% static 'css/menu.css' %}"
+>
+{% endblock %}
+
+{% block content %}
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="karte-hero">
+
+    <div class="karte-glow karte-glow-one"></div>
+    <div class="karte-glow karte-glow-two"></div>
+
+    <div class="container karte-hero-grid">
+
+        <div class="karte-hero-copy">
+
+            <span class="karte-eyebrow">
+                BIERKULTUR · VIELFALT · ENTDECKUNGEN
+            </span>
+
+            <h1>
+
+                <span class="karte-brand-main">
+                    Bierakademie
+                </span>
+
+                <span class="karte-brand-sub">
+                    in der Apothek
+                </span>
+
+            </h1>
+
+            <p class="karte-page-title">
+                Unsere Getränkekarte
+            </p>
+
+            <p class="karte-hero-text">
+                Mehr als 50 Biersorten, ausgewählte Spirituosen,
+                Wein, alkoholfreie Getränke, Kaffee, Tee
+                und kleine Speisen – für bekannte Favoriten
+                und neue Entdeckungen.
+            </p>
+
+            <div class="karte-hero-actions">
+
+                <a
+                    class="karte-primary"
+                    href="#bier"
+                >
+                    Getränkekarte entdecken
+                </a>
+
+                <span class="karte-address">
+                    Kirchstraße 14 · 73033 Göppingen
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="karte-emblem-wrap">
+
+            <img
+                class="karte-real-logo"
+                src="{% static 'img/bierakademie-emblem.png' %}"
+                alt="Emblem der Bierakademie in Göppingen"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     CATEGORY NAV
+================================================== -->
+
+<nav class="karte-categories" aria-label="Getränkekategorien">
+
+    <div class="container karte-categories-inner">
+
+        <a href="#bier"><span>01</span>Bier</a>
+        <a href="#spirituosen"><span>02</span>Spirituosen</a>
+        <a href="#alkoholfrei"><span>03</span>Alkoholfrei</a>
+        <a href="#wein"><span>04</span>Wein & Sekt</a>
+        <a href="#kaffee"><span>05</span>Kaffee & Tee</a>
+        <a href="#essen"><span>06</span>Essen</a>
+        <a href="#zigarren"><span>07</span>Zigarren</a>
+
+    </div>
+
+</nav>
+
+<!-- ==================================================
+     BIER
+================================================== -->
+
+<section class="karte-section karte-light" id="bier">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">01</div>
+
+            <div>
+
+                <span class="karte-label">
+                    UNSER HERZSTÜCK
+                </span>
+
+                <h2>Bier</h2>
+
+                <p>
+                    Vom Fass, klassisch aus der Flasche,
+                    naturtrüb, dunkel oder kräftig.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-group-featured">
+
+                <span class="karte-group-label">
+                    Frisch gezapft
+                </span>
+
+                <h3>Bier vom Fass</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Paulaner</span><strong class="drink-name">Hefe</strong><small class="drink-meta">München · Weizen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hirsch</span><strong class="drink-name">Gold</strong><small class="drink-meta">Wurmlingen · Helles</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bitburger</span><strong class="drink-name">Pils</strong><small class="drink-meta">Bitburg · Pils</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Russ</span><strong class="drink-name">Mixbier</strong><small class="drink-meta">Hefe · Sprudel</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Radler</span><strong class="drink-name">Mixbier</strong><small class="drink-meta">Helles · Sprudel</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Cola Weizen</span><strong class="drink-name">Mixbier</strong><small class="drink-meta">Hefeweizen · Cola</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Klassiker
+                </span>
+
+                <h3>Helle Biere</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Gold Ochsen</span><strong class="drink-name">Original</strong><small class="drink-meta">Ulm · Helles</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Benediktiner</span><strong class="drink-name">Helles</strong><small class="drink-meta">Ettal · Lagerbier</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hirsch</span><strong class="drink-name">Helles</strong><small class="drink-meta">Wurmlingen · Mild</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Stuttgarter</span><strong class="drink-name">Bügel Premium</strong><small class="drink-meta">Stuttgart · Helles</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Augustiner</span><strong class="drink-name">Edelstoff</strong><small class="drink-meta">München · Export</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Naturtrüb
+                </span>
+
+                <h3>Hefe & Naturtrüb</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Hefe Tap 1</strong><small class="drink-meta">Kelheim · Hefeweizen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Original Tap 7</strong><small class="drink-meta">Kelheim · Dunkel</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Paulaner</span><strong class="drink-name">Hefe</strong><small class="drink-meta">München · Naturtrüb</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Huber</span><strong class="drink-name">Hefe Original</strong><small class="drink-meta">Freising · Hefeweizen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Erdinger</span><strong class="drink-name">Hefe</strong><small class="drink-meta">Erding · Weißbier</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Franziskaner</span><strong class="drink-name">Hefe</strong><small class="drink-meta">München · Naturtrüb</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hirsch</span><strong class="drink-name">Zwickl Unfiltriert</strong><small class="drink-meta">Wurmlingen · Zwickl</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Klar & frisch
+                </span>
+
+                <h3>Kristall</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Kristall Tap 2</strong><small class="drink-meta">Kelheim · Kristallweizen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Erdinger</span><strong class="drink-name">Kristall</strong><small class="drink-meta">Erding · Kristallklar</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Sanwald</span><strong class="drink-name">Kristall</strong><small class="drink-meta">Stuttgart · Kristallweizen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Weihenstephan</span><strong class="drink-name">Kristall</strong><small class="drink-meta">Freising · Weizen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Maisel's</span><strong class="drink-name">Kristall</strong><small class="drink-meta">Bayreuth · Kristallweizen</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group karte-group-wide karte-bottle-beer">
+
+                <span class="karte-group-label">
+                    Große Auswahl
+                </span>
+
+                <h3>Flaschenbiere</h3>
+
+                <div class="drink-grid drink-grid-three">
+
+                    <div class="drink-item"><span class="drink-brand">Gruibinger</span><strong class="drink-name">Brunnenbier</strong><small class="drink-meta">Gruibingen · Naturtrüb</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Rothaus</span><strong class="drink-name">Tannenzäpfle Pils</strong><small class="drink-meta">Schwarzwald · Pils</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Jever</span><strong class="drink-name">Pils</strong><small class="drink-meta">Friesisch · Herb</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Beck's</span><strong class="drink-name">Pils</strong><small class="drink-meta">Bremen · Pils</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hirsch</span><strong class="drink-name">Goldstoff</strong><small class="drink-meta">Wurmlingen · Bügelflasche</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Wulle</span><strong class="drink-name">Bügelflasche</strong><small class="drink-meta">Stuttgart · Lager</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Diebels</span><strong class="drink-name">Alt</strong><small class="drink-meta">Issum · Altbier</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">König</span><strong class="drink-name">Pilsner</strong><small class="drink-meta">Duisburg · Pils</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Desperados</span><strong class="drink-name">Original</strong><small class="drink-meta">Tequila Aroma</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Malzig
+                </span>
+
+                <h3>Dunkle Biere</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Franziskaner</span><strong class="drink-name">Dunkel</strong><small class="drink-meta">München · Hefetrüb</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Erdinger</span><strong class="drink-name">Dunkel</strong><small class="drink-meta">Erding · Dunkelbraun</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hirsch</span><strong class="drink-name">Dunkel Hefe</strong><small class="drink-meta">Wurmlingen · Mild gehopft</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group karte-special">
+
+                <span class="karte-group-label">
+                    Für Entdecker
+                </span>
+
+                <h3>Besondere Biere</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Gruibinger</span><strong class="drink-name">Schottenbock</strong><small class="drink-meta">Whiskyfass gereift</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Aventinus</strong><small class="drink-meta">Kelheim · Weizendoppelbock</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Camba</span><strong class="drink-name">Black Shark</strong><small class="drink-meta">Bayern · Starkbier</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Camba</span><strong class="drink-name">Imperial IPA</strong><small class="drink-meta">Bayern · Hopfenbetont</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Aventinus Doppelbock</strong><small class="drink-meta">Kelheim · Kräftig</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Hopfenweiße Tap 5</strong><small class="drink-meta">Kelheim · Aromahopfen</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Andechser</span><strong class="drink-name">Doppelbock</strong><small class="drink-meta">Andechs · Bockbier</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Andechser</span><strong class="drink-name">Bergbock Hell</strong><small class="drink-meta">Andechs · Heller Bock</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Paulaner</span><strong class="drink-name">Salvator</strong><small class="drink-meta">München · Doppelbock</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Weihenstephan</span><strong class="drink-name">Korbinian</strong><small class="drink-meta">Freising · Doppelbock</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Ohne Alkohol
+                </span>
+
+                <h3>Alkoholfreie Biere</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Schneider</span><strong class="drink-name">Hefe Alkoholfrei</strong><small class="drink-meta">Kelheim · Alkoholfrei</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Benediktiner</span><strong class="drink-name">Hefe Alkoholfrei</strong><small class="drink-meta">Ettal · Alkoholfrei</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bitburger</span><strong class="drink-name">0,0</strong><small class="drink-meta">Bitburg · Alkoholfrei</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Beck's</span><strong class="drink-name">Blue</strong><small class="drink-meta">Bremen · Alkoholfrei</small></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     SPIRITUOSEN
+================================================== -->
+
+<section class="karte-section karte-light" id="spirituosen">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">02</div>
+
+            <div>
+
+                <span class="karte-label">
+                    KLASSIKER & SPEZIALITÄTEN
+                </span>
+
+                <h2>Spirituosen</h2>
+
+                <p>
+                    Von klassischen Schnäpsen und Likören
+                    bis zu Whisky, Rum und Cognac.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-group-featured">
+
+                <span class="karte-group-label">
+                    Klassiker
+                </span>
+
+                <h3>Schnaps & Likör</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Gordon</span><strong class="drink-name">Gin</strong><small class="drink-meta">London · Gin</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Gorbatschow</span><strong class="drink-name">Wodka</strong><small class="drink-meta">Berlin · Vodka</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Stavros</span><strong class="drink-name">Ouzo</strong><small class="drink-meta">Griechenland · Anis</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schwarzwälder</span><strong class="drink-name">Kirschwasser</strong><small class="drink-meta">Deutschland · Obstbrand</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Cellini</span><strong class="drink-name">Grappa</strong><small class="drink-meta">Italien · Tresterbrand</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Sierra</span><strong class="drink-name">Tequila Silver</strong><small class="drink-meta">Mexico · Tequila</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Sierra</span><strong class="drink-name">Tequila Reposado</strong><small class="drink-meta">Mexico · Reposado</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Rialto</span><strong class="drink-name">Amaretto</strong><small class="drink-meta">Likör · Mandel</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Baileys</span><strong class="drink-name">Irish Cream</strong><small class="drink-meta">Irland · Cream Likör</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Kahlua</span><strong class="drink-name">Coffee Liqueur</strong><small class="drink-meta">Mexico · Kaffee</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Herb & aromatisch
+                </span>
+
+                <h3>Kräuterschnäpse</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Penninger</span><strong class="drink-name">Bärwurz</strong><small class="drink-meta">Bayern · Kräuterschnaps</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Jägermeister</span><strong class="drink-name">Kräuterlikör</strong><small class="drink-meta">Wolfenbüttel · Klassiker</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Underberg</span><strong class="drink-name">Kräuter</strong><small class="drink-meta">Rheinberg · Digestif</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Ramazzotti</span><strong class="drink-name">Amaro</strong><small class="drink-meta">Milano · Kräuterlikör</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Averna</span><strong class="drink-name">Amaro</strong><small class="drink-meta">Sicilia · Kräuterlikör</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Aperol</span><strong class="drink-name">Original</strong><small class="drink-meta">Italien · Aperitif</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group karte-group-wide karte-special">
+
+                <span class="karte-group-label">
+                    Fass & Charakter
+                </span>
+
+                <h3>Whisky</h3>
+
+                <div class="drink-grid drink-grid-three">
+
+                    <div class="drink-item"><span class="drink-brand">Jack Daniel's</span><strong class="drink-name">Gentleman Jack</strong><small class="drink-meta">Tennessee · Whiskey</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Jack Daniel's</span><strong class="drink-name">No. 7</strong><small class="drink-meta">Tennessee · Whiskey</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Wild Turkey</span><strong class="drink-name">Honey</strong><small class="drink-meta">USA · Whiskeylikör</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bulleit</span><strong class="drink-name">95 Rye</strong><small class="drink-meta">USA · Rye Whiskey</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Woodford Reserve</span><strong class="drink-name">Straight Bourbon</strong><small class="drink-meta">Kentucky · Bourbon</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Slyrs</span><strong class="drink-name">Single Malt</strong><small class="drink-meta">Bayern · Whisky</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Redbreast</span><strong class="drink-name">Single Pot Still</strong><small class="drink-meta">Irland · Whiskey</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bushmills</span><strong class="drink-name">Single Malt</strong><small class="drink-meta">Irland · Whiskey</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Talisker</span><strong class="drink-name">Single Malt</strong><small class="drink-meta">Scotland · Isle of Skye</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Ardbeg</span><strong class="drink-name">Islay Single Malt</strong><small class="drink-meta">Scotland · Islay</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Highland Park</span><strong class="drink-name">Single Malt</strong><small class="drink-meta">Scotland · Whisky</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Johnnie Walker</span><strong class="drink-name">Gold Label Reserve</strong><small class="drink-meta">Scotland · Blend</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Johnnie Walker</span><strong class="drink-name">Red Label Reserve</strong><small class="drink-meta">Scotland · Blend</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Chivas Regal</span><strong class="drink-name">Blended Whisky</strong><small class="drink-meta">Scotland · Blend</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Ballantine's</span><strong class="drink-name">Finest</strong><small class="drink-meta">Scotland · Blend</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group karte-group-wide">
+
+                <span class="karte-group-label">
+                    International
+                </span>
+
+                <h3>Rum & Cognac</h3>
+
+                <div class="drink-grid drink-grid-three">
+
+                    <div class="drink-item"><span class="drink-brand">Ron Zacapa</span><strong class="drink-name">Solera Gran Reserva</strong><small class="drink-meta">Guatemala · Rum</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Don Papa</span><strong class="drink-name">Small Batch</strong><small class="drink-meta">Philippinen · Rum</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Metusalem</span><strong class="drink-name">Gran Reserva</strong><small class="drink-meta">Kuba · Rum</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Havana Club</span><strong class="drink-name">7 Years</strong><small class="drink-meta">Kuba · Rum</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Captain Morgan</span><strong class="drink-name">Original</strong><small class="drink-meta">Jamaika · Rum</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bacardi</span><strong class="drink-name">White Rum</strong><small class="drink-meta">Puerto Rico · Rum</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Metaxa</span><strong class="drink-name">7 Sterne</strong><small class="drink-meta">Griechenland · Weinbrand</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hennessy</span><strong class="drink-name">Very Special</strong><small class="drink-meta">Frankreich · Cognac</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Asbach</span><strong class="drink-name">Uralt</strong><small class="drink-meta">Rüdesheim · Weinbrand</small></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     ALKOHOLFREI
+================================================== -->
+
+<section class="karte-section karte-light" id="alkoholfrei">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">03</div>
+
+            <div>
+
+                <span class="karte-label">
+                    OHNE ALKOHOL
+                </span>
+
+                <h2>Alkoholfrei</h2>
+
+                <p>
+                    Softdrinks, Wasser, Säfte und alkoholfreie Alternativen.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-group-featured">
+
+                <span class="karte-group-label">
+                    Erfrischung
+                </span>
+
+                <h3>Softdrinks & Wasser</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Coca-Cola</span><strong class="drink-name">Classic</strong><small class="drink-meta">Softdrink</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Fanta</span><strong class="drink-name">Orange</strong><small class="drink-meta">Softdrink</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Coca-Cola</span><strong class="drink-name">Zero</strong><small class="drink-meta">Zuckerfrei</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Spezi</span><strong class="drink-name">Cola · Fanta</strong><small class="drink-meta">Mixgetränk</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schweppes</span><strong class="drink-name">Bitter Lemon</strong><small class="drink-meta">Tonic</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schweppes</span><strong class="drink-name">Tonic Water</strong><small class="drink-meta">Tonic</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bierakademie</span><strong class="drink-name">Sprudelwasser</strong><small class="drink-meta">Filtriert</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bierakademie</span><strong class="drink-name">Stilles Wasser</strong><small class="drink-meta">Filtriert</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Fruchtig
+                </span>
+
+                <h3>Säfte</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Bad Boll</span><strong class="drink-name">Orangensaft</strong><small class="drink-meta">100% Frucht</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bad Boll</span><strong class="drink-name">Apfelsaft</strong><small class="drink-meta">100% Frucht</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Bad Boll</span><strong class="drink-name">Johannisbeer-Nektar</strong><small class="drink-meta">Direktsaft</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Kumpf</span><strong class="drink-name">Kirsch-Nektar</strong><small class="drink-meta">Fruchtig</small></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     WEIN & SEKT
+================================================== -->
+
+<section class="karte-section karte-light" id="wein">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">04</div>
+
+            <div>
+
+                <span class="karte-label">
+                    WEIN & PRICKELNDES
+                </span>
+
+                <h2>Wein & Sekt</h2>
+
+                <p>
+                    Rotwein, Weißwein, Rosé, Sekt und Champagner.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-group-featured">
+
+                <span class="karte-group-label">
+                    Wein
+                </span>
+
+                <h3>Weine & Schorlen</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Schloss Affaltrach</span><strong class="drink-name">Schwäbischer Landwein</strong><small class="drink-meta">Obersulm · Trocken</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Agioritiko</span><strong class="drink-name">Merlot Rotwein</strong><small class="drink-meta">Griechenland · Trocken</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Apelia</span><strong class="drink-name">Rotwein</strong><small class="drink-meta">Griechenland · Lieblich</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Mavrodaphne</span><strong class="drink-name">Likörwein</strong><small class="drink-meta">Griechenland · Süß</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Schloss Affaltrach</span><strong class="drink-name">Rosé</strong><small class="drink-meta">Deutschland · Trocken</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Riesling</span><strong class="drink-name">Weißwein</strong><small class="drink-meta">Heilbronn · Trocken</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Prickelnd
+                </span>
+
+                <h3>Sekt & Champagner</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Yescovino</span><strong class="drink-name">Sekt</strong><small class="drink-meta">Italien · Halb-trocken</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Yescovino</span><strong class="drink-name">Prosecco</strong><small class="drink-meta">Italien · Prickelnd</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Fürst Metternich</span><strong class="drink-name">Sekt</strong><small class="drink-meta">Wiesbaden · Sekt</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Etienne Dumont</span><strong class="drink-name">Champagner Brut</strong><small class="drink-meta">Frankreich · Brut</small></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     KAFFEE & TEE
+================================================== -->
+
+<section class="karte-section karte-light" id="kaffee">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">05</div>
+
+            <div>
+
+                <span class="karte-label">
+                    WARM & GEMÜTLICH
+                </span>
+
+                <h2>Kaffee & Tee</h2>
+
+                <p>
+                    Für den ruhigen Moment zwischendurch.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-group-featured">
+
+                <span class="karte-group-label">
+                    Tee
+                </span>
+
+                <h3>Heißgetränke</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Sunshine</span><strong class="drink-name">Sommerfrüchte Tee</strong><small class="drink-meta">Fruchtig · Heiß</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Teehaus Weirich</span><strong class="drink-name">Loser Tee</strong><small class="drink-meta">Auswahl vor Ort</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Classic</span><strong class="drink-name">Kamillentee</strong><small class="drink-meta">Kräuter</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Classic</span><strong class="drink-name">Pfefferminztee</strong><small class="drink-meta">Frisch</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Classic</span><strong class="drink-name">Grüner Tee</strong><small class="drink-meta">Mild</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Classic</span><strong class="drink-name">Minze-Ingwer Tee</strong><small class="drink-meta">Würzig · Frisch</small></div>
+
+                </div>
+
+            </article>
+
+            <article class="karte-group">
+
+                <span class="karte-group-label">
+                    Kaffee
+                </span>
+
+                <h3>Klassiker</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Kaffee</span><strong class="drink-name">Tasse Kaffee</strong><small class="drink-meta">Heiß · Klassisch</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Espresso</span><strong class="drink-name">Espresso</strong><small class="drink-meta">Kräftig · Kurz</small></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     ESSEN
+================================================== -->
+
+<section class="karte-section karte-light" id="essen">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">06</div>
+
+            <div>
+
+                <span class="karte-label">
+                    KALTE KÜCHE
+                </span>
+
+                <h2>Essen</h2>
+
+                <p>
+                    Kalte Speisen nach Tagesangebot.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-group-featured karte-group-wide">
+
+                <span class="karte-group-label">
+                    Aus unserer Karte
+                </span>
+
+                <h3>Kalte Speisen</h3>
+
+                <div class="drink-grid drink-grid-three">
+
+                    <div class="drink-item"><span class="drink-brand">Mezze</span><strong class="drink-name">Mezze Teller</strong><small class="drink-meta">Mediterran · Auswahl</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Hausklassiker</span><strong class="drink-name">Wurstsalat</strong><small class="drink-meta">Mit Emmentaler</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Herzhaft</span><strong class="drink-name">Landjäger</strong><small class="drink-meta">Klassischer Snack</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Vegan</span><strong class="drink-name">Großer veganer Teller</strong><small class="drink-meta">Pflanzlich · Sättigend</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Vegetarisch</span><strong class="drink-name">Großer vegetarischer Teller</strong><small class="drink-meta">Frisch · Vielfältig</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Spezial</span><strong class="drink-name">Mezze Spezialteller</strong><small class="drink-meta">Große Auswahl</small></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     ZIGARREN
+================================================== -->
+
+<section class="karte-section karte-light" id="zigarren">
+
+    <div class="container">
+
+        <header class="karte-section-head">
+
+            <div class="karte-section-number">07</div>
+
+            <div>
+
+                <span class="karte-label">
+                    AUS UNSEREM HUMIDOR
+                </span>
+
+                <h2>Zigarren</h2>
+
+                <p>
+                    Eine Auswahl an Zigarren und Zigarillos
+                    halten wir in unserem Humidor bereit.
+                </p>
+
+            </div>
+
+        </header>
+
+        <div class="karte-groups">
+
+            <article class="karte-group karte-special karte-group-wide">
+
+                <span class="karte-group-label">
+                    Humidor
+                </span>
+
+                <h3>Zigarren & Zigarillos</h3>
+
+                <div class="drink-grid">
+
+                    <div class="drink-item"><span class="drink-brand">Humidor</span><strong class="drink-name">Zigarren</strong><small class="drink-meta">Auswahl vor Ort</small></div>
+
+                    <div class="drink-item"><span class="drink-brand">Humidor</span><strong class="drink-name">Zigarillos</strong><small class="drink-meta">Auswahl vor Ort</small></div>
+
+                </div>
+
+                <p class="cigar-note">
+                    Sprechen Sie uns gerne an.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     CTA
+================================================== -->
+
+<section class="menu-footer-cta">
+
+    <div class="container">
+
+        <p class="section-kicker">
+            BIERAKADEMIE
+        </p>
+
+        <span class="menu-footer-subbrand">
+            in der Apothek · Göppingen
+        </span>
+
+        <h2>
+            Die beste Empfehlung<br>
+            entsteht im Gespräch.
+        </h2>
+
+        <p>
+            Komm vorbei, entdecke neue Favoriten
+            und erlebe Bierkultur mit Charakter.
+        </p>
+
+        <a
+            class="button button-dark"
+            href="{% url 'website:contact' %}"
+        >
+            Besuch planen
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

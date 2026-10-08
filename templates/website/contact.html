@@ -1,0 +1,456 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Kontakt & Öffnungszeiten | Bierakademie Göppingen{% endblock %}
+
+
+{% block meta_description %}Kontakt, Öffnungszeiten und Anfahrt zur Bierakademie in Göppingen – Bierkultur, besondere Getränke und gemeinsame Abende in der Kirchstraße 14.{% endblock %}
+
+
+{% block og_title %}Kontakt & Öffnungszeiten | Bierakademie Göppingen{% endblock %}
+
+
+{% block og_description %}Adresse, Öffnungszeiten, Telefonnummer und Anfahrt zur Bierakademie in der Apothek in Göppingen.{% endblock %}
+
+
+{% block twitter_title %}Kontakt & Öffnungszeiten | Bierakademie Göppingen{% endblock %}
+
+
+{% block twitter_description %}Besuche die Bierakademie in der Kirchstraße 14 in Göppingen. Hier findest du Öffnungszeiten, Telefonnummer und Anfahrt.{% endblock %}
+
+
+{% block body_class %}contact-page{% endblock %}
+
+
+{% block extra_css %}
+<link
+    rel="stylesheet"
+    href="{% static 'css/contact.css' %}"
+>
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="contact-hero">
+
+    <div class="container contact-hero-inner">
+
+        <div class="contact-hero-copy">
+
+            <span class="contact-eyebrow">
+                KONTAKT &amp; ANFAHRT
+            </span>
+
+
+            <h1>
+                Bierakademie
+            </h1>
+
+
+            <span class="contact-hero-subbrand">
+                in der Apothek · Göppingen
+            </span>
+
+
+            <p class="contact-hero-lead">
+                Mehr als Bier: Entdeckungen, Begegnungen
+                und besondere Abende mitten in Göppingen.
+                Komm vorbei und erlebe Bierkultur mit Charakter.
+            </p>
+
+        </div>
+
+
+        <div class="contact-hero-mark contact-logo-wrap">
+
+            <img
+                class="contact-real-logo"
+                src="{% static 'img/bierakademie-emblem.png' %}"
+                alt="Emblem der Bierakademie in Göppingen"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CONTACT OVERVIEW
+================================================== -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <div class="contact-section-head">
+
+            <span class="contact-number">
+                01
+            </span>
+
+
+            <div>
+
+                <span class="contact-label">
+                    DEIN BESUCH
+                </span>
+
+
+                <h2>
+                    Hier beginnt dein<br>
+                    besonderer Abend.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <!-- ADDRESS -->
+
+            <article class="contact-card contact-card-dark">
+
+                <span class="contact-card-label">
+                    Unser Ort
+                </span>
+
+
+                <h3>
+
+                    Bierakademie
+
+                    <small class="contact-card-subbrand">
+                        in der Apothek
+                    </small>
+
+                </h3>
+
+
+                <address>
+                    Kirchstraße 14<br>
+                    73033 Göppingen
+                </address>
+
+
+                <p class="contact-card-text contact-card-text-light">
+                    Zentral gelegen und bereit
+                    für Bierkultur, gute Gespräche
+                    und gemeinsame Abende.
+                </p>
+
+
+                <div class="contact-card-footer">
+
+                    <a
+                        class="contact-action contact-action-light"
+                        href="https://maps.app.goo.gl/7Kiujtu5v7DHLwdGA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Route öffnen
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PHONE -->
+
+            <article class="contact-card">
+
+                <span class="contact-card-label">
+                    Direkter Kontakt
+                </span>
+
+
+                <h3>
+                    Einfach<br>
+                    melden.
+                </h3>
+
+
+                <a
+                    class="contact-phone"
+                    href="tel:+49716177212"
+                >
+                    07161 77 21 2
+                </a>
+
+
+                <p class="contact-muted">
+                    Für Fragen zur Getränkekarte,
+                    zu deinem Besuch oder für einen kurzen Kontakt
+                    erreichst du uns direkt telefonisch.
+                </p>
+
+
+                <div class="contact-card-footer">
+
+                    <a
+                        class="contact-action"
+                        href="tel:+49716177212"
+                    >
+                        Jetzt anrufen
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     OPENING HOURS
+================================================== -->
+
+<section class="hours-section">
+
+    <div class="container hours-layout">
+
+        <div class="hours-intro">
+
+            <span class="contact-number">
+                02
+            </span>
+
+
+            <span class="contact-label contact-label-light">
+                ZEIT FÜR BIERKULTUR
+            </span>
+
+
+            <h2>
+                Wenn der Alltag endet,<br>
+                beginnt der Abend.
+            </h2>
+
+
+            <p>
+                Zeit zum Entdecken, Genießen und Zusammensein.
+                Sonntag bis Donnerstag bis spät in die Nacht,
+                Freitag und Samstag noch ein bisschen länger.
+            </p>
+
+        </div>
+
+
+        <div class="hours-card">
+
+            <div class="hours-row">
+
+                <div>
+
+                    <span class="hours-days">
+                        Sonntag – Donnerstag
+                    </span>
+
+                    <span class="hours-note">
+                        So – Do
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    15:00 – 03:00
+                </strong>
+
+            </div>
+
+
+            <div class="hours-row">
+
+                <div>
+
+                    <span class="hours-days">
+                        Freitag – Samstag
+                    </span>
+
+                    <span class="hours-note">
+                        Fr – Sa
+                    </span>
+
+                </div>
+
+
+                <strong>
+                    14:00 – 05:00
+                </strong>
+
+            </div>
+
+
+            <div class="hours-card-bottom">
+
+                <span class="hours-small">
+                    Kalte Speisen nach Tagesangebot
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION
+================================================== -->
+
+<section class="location-section">
+
+    <div class="container">
+
+        <div class="contact-section-head">
+
+            <span class="contact-number">
+                03
+            </span>
+
+
+            <div>
+
+                <span class="contact-label">
+                    ANFAHRT
+                </span>
+
+
+                <h2>
+                    Mitten in<br>
+                    Göppingen.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="location-panel">
+
+            <!-- LOCATION TEXT -->
+
+            <div class="location-copy">
+
+                <span class="location-kicker">
+                    BIERAKADEMIE
+                </span>
+
+
+                <span class="location-subbrand">
+                    in der Apothek
+                </span>
+
+
+                <h3>
+                    Kirchstraße 14
+                </h3>
+
+
+                <p>
+                    73033 Göppingen.
+                    Zentral gelegen und schnell erreichbar –
+                    direkt im Herzen der Stadt.
+                </p>
+
+
+                <a
+                    class="location-button"
+                    href="https://maps.app.goo.gl/7Kiujtu5v7DHLwdGA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Route in Google Maps öffnen
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+
+
+            <!-- GOOGLE MAPS -->
+
+            <div class="location-map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Bierakademie%20in%20der%20Apothek%2C%20Kirchstra%C3%9Fe%2014%2C%2073033%20G%C3%B6ppingen&output=embed"
+                    title="Anfahrt zur Bierakademie in der Kirchstraße 14 in Göppingen"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     FINAL CTA
+================================================== -->
+
+<section class="contact-final">
+
+    <div class="container contact-final-inner">
+
+        <div>
+
+            <span class="contact-label contact-label-light">
+                BIERAKADEMIE
+            </span>
+
+
+            <span class="contact-final-subbrand">
+                in der Apothek · Göppingen
+            </span>
+
+
+            <h2>
+                Mehr als Bier.<br>
+                Nur einen Besuch entfernt.
+            </h2>
+
+
+            <p>
+                Kirchstraße 14 · 73033 Göppingen
+            </p>
+
+        </div>
+
+
+        <a
+            class="contact-final-button"
+            href="{% url 'website:drinks' %}"
+        >
+            Getränkekarte entdecken
+        </a>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,636 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+Einblicke | Bierakademie Göppingen
+{% endblock %}
+
+
+{% block meta_description %}
+Einblicke in die Bierakademie in Göppingen:
+Bierkultur, besondere Getränke, Begegnungen,
+Atmosphäre und gemeinsame Abende.
+{% endblock %}
+
+
+{% block og_title %}
+Einblicke | Bierakademie Göppingen
+{% endblock %}
+
+
+{% block og_description %}
+Entdecke die Atmosphäre der Bierakademie:
+besondere Biere, gute Gespräche und Abende mit Charakter.
+{% endblock %}
+
+
+{% block twitter_title %}
+Einblicke | Bierakademie Göppingen
+{% endblock %}
+
+
+{% block twitter_description %}
+Bierkultur, Begegnungen und besondere Abende
+mitten in Göppingen.
+{% endblock %}
+
+
+{% block body_class %}
+gallery-page
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <p class="page-kicker">
+            EINBLICKE
+        </p>
+
+
+        <h1>
+
+            <span class="page-brand-main">
+                Bierakademie
+            </span>
+
+            <span class="page-brand-sub">
+                in der Apothek
+            </span>
+
+        </h1>
+
+
+        <p>
+            Eindrücke von einem Ort,
+            an dem Bierkultur, Begegnungen
+            und besondere Abende zusammenkommen.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<section class="content-section">
+
+    <div class="container editorial-grid">
+
+        <div>
+
+            <p class="section-kicker">
+                UNSERE ATMOSPHÄRE
+            </p>
+
+
+            <h2>
+                Ein Ort mit<br>
+                vielen Seiten.
+            </h2>
+
+        </div>
+
+
+        <div class="editorial-copy">
+
+            <p>
+                Die Bierakademie lebt nicht nur von ihrer Auswahl.
+                Sie lebt von den Menschen,
+                den Gesprächen und den Momenten,
+                die an einem gemeinsamen Abend entstehen.
+            </p>
+
+
+            <p>
+                Mal steht ein neues Bier im Mittelpunkt,
+                mal ein vertrauter Klassiker.
+                Manchmal geht es um Geschmack,
+                manchmal einfach um gute Gesellschaft.
+            </p>
+
+
+            <p>
+                Jeder Besuch sieht anders aus.
+                Genau das macht die Atmosphäre
+                der Bierakademie besonders.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     VISUAL MOMENTS
+================================================== -->
+
+<section class="editorial-section">
+
+    <div class="container">
+
+        <div class="section-heading-row">
+
+            <div>
+
+                <p class="section-kicker">
+                    MOMENTAUFNAHMEN
+                </p>
+
+
+                <h2>
+                    Was einen Abend<br>
+                    besonders macht.
+                </h2>
+
+            </div>
+
+
+            <a
+                class="text-link"
+                href="{% url 'website:contact' %}"
+            >
+                Besuch planen →
+            </a>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <!-- CARD 01 -->
+
+            <article
+                class="gallery-card"
+                style="
+                    background:
+                        radial-gradient(
+                            circle at 75% 22%,
+                            rgba(217, 188, 128, 0.30),
+                            transparent 28%
+                        ),
+                        linear-gradient(
+                            145deg,
+                            #173f2e,
+                            #0b251b
+                        );
+                "
+            >
+
+                <div class="gallery-card-copy">
+
+                    <span class="section-kicker section-kicker-light">
+                        01 · BIERKULTUR
+                    </span>
+
+                    <h3>
+                        Vielfalt im Glas
+                    </h3>
+
+                    <p>
+                        Klassiker, Spezialitäten
+                        und neue Entdeckungen.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 02 -->
+
+            <article
+                class="gallery-card"
+                style="
+                    background:
+                        radial-gradient(
+                            circle at 30% 28%,
+                            rgba(255, 244, 219, 0.18),
+                            transparent 24%
+                        ),
+                        linear-gradient(
+                            145deg,
+                            #9c4548,
+                            #6f2429
+                        );
+                "
+            >
+
+                <div class="gallery-card-copy">
+
+                    <span class="section-kicker section-kicker-light">
+                        02 · BEGEGNUNGEN
+                    </span>
+
+                    <h3>
+                        Gemeinsam genießen
+                    </h3>
+
+                    <p>
+                        Freunde treffen,
+                        miteinander reden und bleiben.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 03 -->
+
+            <article
+                class="gallery-card"
+                style="
+                    background:
+                        radial-gradient(
+                            ellipse at 72% 24%,
+                            rgba(189, 152, 87, 0.30),
+                            transparent 32%
+                        ),
+                        linear-gradient(
+                            145deg,
+                            #3c3325,
+                            #201b16
+                        );
+                "
+            >
+
+                <div class="gallery-card-copy">
+
+                    <span class="section-kicker section-kicker-light">
+                        03 · CHARAKTER
+                    </span>
+
+                    <h3>
+                        Ein eigener Stil
+                    </h3>
+
+                    <p>
+                        Warm, entspannt
+                        und nicht austauschbar.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 04 -->
+
+            <article
+                class="gallery-card"
+                style="
+                    background:
+                        radial-gradient(
+                            circle at 75% 25%,
+                            rgba(255, 255, 255, 0.14),
+                            transparent 27%
+                        ),
+                        linear-gradient(
+                            145deg,
+                            #285f45,
+                            #123b2a
+                        );
+                "
+            >
+
+                <div class="gallery-card-copy">
+
+                    <span class="section-kicker section-kicker-light">
+                        04 · ENTDECKEN
+                    </span>
+
+                    <h3>
+                        Immer etwas Neues
+                    </h3>
+
+                    <p>
+                        Andere Stile,
+                        andere Aromen, neue Favoriten.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 05 -->
+
+            <article
+                class="gallery-card"
+                style="
+                    background:
+                        radial-gradient(
+                            ellipse at 25% 30%,
+                            rgba(217, 188, 128, 0.24),
+                            transparent 30%
+                        ),
+                        linear-gradient(
+                            145deg,
+                            #70403a,
+                            #3d2420
+                        );
+                "
+            >
+
+                <div class="gallery-card-copy">
+
+                    <span class="section-kicker section-kicker-light">
+                        05 · GENUSS
+                    </span>
+
+                    <h3>
+                        Mehr als Bier
+                    </h3>
+
+                    <p>
+                        Spirituosen, Wein,
+                        Kaffee und kleine Speisen.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 06 -->
+
+            <article
+                class="gallery-card"
+                style="
+                    background:
+                        radial-gradient(
+                            circle at 70% 28%,
+                            rgba(217, 188, 128, 0.22),
+                            transparent 28%
+                        ),
+                        linear-gradient(
+                            145deg,
+                            #153b2b,
+                            #081f16
+                        );
+                "
+            >
+
+                <div class="gallery-card-copy">
+
+                    <span class="section-kicker section-kicker-light">
+                        06 · ABENDE
+                    </span>
+
+                    <h3>
+                        Zeit, die bleibt
+                    </h3>
+
+                    <p>
+                        Aus einem kurzen Besuch
+                        wird ein besonderer Abend.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<
+<!-- EMBLEM / BRAND MOMENT-->
+
+<section class="home-section home-section-dark">
+
+    <div class="container editorial-grid gallery-brand-moment">
+
+        <div class="gallery-brand-heading">
+
+            <p class="section-kicker section-kicker-light">
+                UNSER ZEICHEN
+            </p>
+
+            <h2>
+                Bierakademie<br>
+                mit Charakter.
+            </h2>
+
+        </div>
+
+        <div class="editorial-copy gallery-brand-emblem">
+
+            <img
+                src="{% static 'img/bierakademie-emblem.png' %}"
+                alt="Emblem der Bierakademie in Göppingen"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    .gallery-brand-emblem img {
+        display: block;
+        width: min(100%, 250px);
+        height: auto;
+        margin-inline: auto;
+        filter: drop-shadow(
+            0 24px 38px rgba(0, 0, 0, 0.30)
+        );
+    }
+
+    @media (max-width: 680px) {
+        .gallery-brand-moment {
+            gap: 28px;
+            justify-items: center;
+        }
+
+        .gallery-brand-heading {
+            width: 100%;
+            text-align: center;
+        }
+
+        .gallery-brand-heading h2 {
+            font-size: clamp(2rem, 8vw, 2.8rem);
+            line-height: 1.1;
+        }
+
+        .gallery-brand-emblem {
+            width: 100%;
+        }
+
+        .gallery-brand-emblem img {
+            width: 120px;
+        }
+    }
+</style>
+
+
+<!-- ==================================================
+     EXPERIENCE
+================================================== -->
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="section-heading-row">
+
+            <div>
+
+                <p class="section-kicker">
+                    ERLEBEN
+                </p>
+
+
+                <h2>
+                    Nicht nur ansehen.<br>
+                    Selbst erleben.
+                </h2>
+
+            </div>
+
+
+            <a
+                class="text-link"
+                href="{% url 'website:drinks' %}"
+            >
+                Getränkekarte entdecken →
+            </a>
+
+        </div>
+
+
+        <div class="experience-grid">
+
+            <!-- EXPERIENCE 01 -->
+
+            <article class="experience-card">
+
+                <span class="feature-number">
+                    01
+                </span>
+
+
+                <h3>
+                    Auswahl
+                </h3>
+
+
+                <p>
+                    Mehr als 50 Biersorten
+                    und weitere Getränke
+                    für unterschiedliche Geschmäcker
+                    und Stimmungen.
+                </p>
+
+            </article>
+
+
+            <!-- EXPERIENCE 02 -->
+
+            <article class="experience-card">
+
+                <span class="feature-number">
+                    02
+                </span>
+
+
+                <h3>
+                    Gesellschaft
+                </h3>
+
+
+                <p>
+                    Ein Platz für Freunde,
+                    Gespräche, Begegnungen
+                    und gemeinsame Erinnerungen.
+                </p>
+
+            </article>
+
+
+            <!-- EXPERIENCE 03 -->
+
+            <article class="experience-card">
+
+                <span class="feature-number">
+                    03
+                </span>
+
+
+                <h3>
+                    Atmosphäre
+                </h3>
+
+
+                <p>
+                    Ein besonderer Rahmen
+                    für entspannte Stunden
+                    und Abende mit Charakter.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     FINAL CTA
+================================================== -->
+
+<section class="home-cta">
+
+    <div class="container home-cta-inner">
+
+        <div>
+
+            <p class="section-kicker section-kicker-light">
+                BIERAKADEMIE GÖPPINGEN
+            </p>
+
+
+            <h2>
+                Der beste Eindruck<br>
+                entsteht vor Ort.
+            </h2>
+
+        </div>
+
+
+        <a
+            class="button button-primary"
+            href="{% url 'website:contact' %}"
+        >
+            Besuch planen
+        </a>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

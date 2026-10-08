@@ -1,0 +1,411 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Bierakademie | Bierkultur in Göppingen
+{% endblock %}
+
+
+{% block meta_description %}
+Die Bierakademie in Göppingen verbindet mehr als 50 Biersorten,
+besondere Getränke, Begegnungen und Abende mit Charakter.
+{% endblock %}
+
+
+{% block og_title %}
+Bierakademie | Bierkultur in Göppingen
+{% endblock %}
+
+
+{% block og_description %}
+Mehr als Bier: Entdecke besondere Sorten,
+gute Gespräche und Abende mit Charakter
+mitten in Göppingen.
+{% endblock %}
+
+
+{% block twitter_title %}
+Bierakademie | Bierkultur in Göppingen
+{% endblock %}
+
+
+{% block twitter_description %}
+Mehr als 50 Biersorten, besondere Getränke,
+Begegnungen und Abende mit Charakter.
+{% endblock %}
+
+
+{% block body_class %}
+home-page
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <p class="hero-kicker">
+            BIERKULTUR IN GÖPPINGEN
+        </p>
+
+
+        <h1>
+
+            <span class="hero-brand-main">
+                Bierakademie
+            </span>
+
+            <span class="hero-brand-sub">
+                in der Apothek
+            </span>
+
+        </h1>
+
+
+        <p class="hero-subtitle">
+            Mehr als Bier.
+            Ein Ort zum Entdecken, Begegnen und Genießen.
+        </p>
+
+
+        <p class="hero-address">
+            Kirchstraße 14 · 73033 Göppingen
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                class="button button-primary"
+                href="{% url 'website:drinks' %}"
+            >
+                Menü ansehen
+            </a>
+
+
+            <a
+                class="button button-secondary"
+                href="{% url 'website:contact' %}"
+            >
+                Besuch planen
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     INTRO
+================================================== -->
+
+<section class="home-section">
+
+    <div class="container home-intro">
+
+        <div>
+
+            <p class="section-kicker">
+                MEHR ALS BIER
+            </p>
+
+
+            <h2>
+                Bierkultur<br>
+                mit Charakter.
+            </h2>
+
+        </div>
+
+
+        <div class="home-intro-text">
+
+            <p>
+                Die Bierakademie ist ein besonderer Ort für alle,
+                die Bier nicht einfach nur trinken,
+                sondern Vielfalt, Herkunft und Charakter
+                entdecken möchten.
+            </p>
+
+
+            <p>
+                Mehr als 50 Biersorten,
+                ausgewählte weitere Getränke,
+                gute Gespräche und eine Atmosphäre,
+                in der aus einem kurzen Besuch
+                schnell ein besonderer Abend werden kann.
+            </p>
+
+
+            <p>
+                Hier geht es nicht nur darum,
+                was im Glas ist.
+                Es geht um Begegnungen,
+                gemeinsame Zeit, Unterhaltung
+                und die Freude daran,
+                immer wieder etwas Neues zu entdecken.
+            </p>
+
+
+            <a
+                class="text-link"
+                href="{% url 'website:about' %}"
+            >
+                Die Bierakademie kennenlernen →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     EXPERIENCE
+================================================== -->
+
+<section class="home-section home-section-dark">
+
+    <div class="container">
+
+        <p class="section-kicker section-kicker-light">
+            WAS UNS BESONDERS MACHT
+        </p>
+
+
+        <div class="section-heading-row">
+
+            <h2>
+                Ein Ort für<br>
+                besondere Abende.
+            </h2>
+
+
+            <a
+                class="text-link text-link-light"
+                href="{% url 'website:drinks' %}"
+            >
+                Menü ansehen →
+            </a>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <!-- CARD 01 -->
+
+            <article class="feature-card">
+
+                <span class="feature-number">
+                    01
+                </span>
+
+
+                <h3>
+                    Bierkultur
+                </h3>
+
+
+                <p>
+                    Unterschiedliche Brauereien,
+                    Bierstile und Geschmacksrichtungen
+                    laden dazu ein,
+                    bekannte Klassiker und neue Favoriten
+                    zu entdecken.
+                </p>
+
+            </article>
+
+
+            <!-- CARD 02 -->
+
+            <article class="feature-card">
+
+                <span class="feature-number">
+                    02
+                </span>
+
+
+                <h3>
+                    Begegnungen
+                </h3>
+
+
+                <p>
+                    Freunde treffen,
+                    miteinander reden,
+                    gemeinsam lachen
+                    und den Alltag für eine Weile
+                    draußen lassen.
+                </p>
+
+            </article>
+
+
+            <!-- CARD 03 -->
+
+            <article class="feature-card">
+
+                <span class="feature-number">
+                    03
+                </span>
+
+
+                <h3>
+                    Atmosphäre
+                </h3>
+
+
+                <p>
+                    Ein eigenständiger Ort
+                    mit Charakter,
+                    entspannter Stimmung
+                    und allem,
+                    was einen gelungenen Abend ausmacht.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     LOCATION
+================================================== -->
+
+<section class="home-section">
+
+    <div class="container location-grid">
+
+        <!-- LOCATION COPY -->
+
+        <div class="home-location-copy">
+
+            <p class="section-kicker">
+                MITTEN IN GÖPPINGEN
+            </p>
+
+
+            <h2>
+
+                <span class="location-title-line">
+                    Dein Abend
+                </span>
+
+                <span class="location-title-line">
+                    beginnt hier.
+                </span>
+
+            </h2>
+
+
+            <p class="location-address">
+
+                <strong>
+                    Bierakademie
+                </strong>
+
+                <br>
+
+                <span>
+                    in der Apothek
+                </span>
+
+                <br><br>
+
+                Kirchstraße 14
+
+                <br>
+
+                73033 Göppingen
+
+                <br><br>
+
+                Telefon:
+                <a href="tel:+49716177212">
+                    07161 77 21 2
+                </a>
+
+            </p>
+
+
+            <a
+                class="button button-dark"
+                href="{% url 'website:contact' %}"
+            >
+                Kontakt &amp; Öffnungszeiten
+            </a>
+
+        </div>
+
+
+        <!-- GOOGLE MAPS -->
+
+        <div class="home-map">
+
+            <iframe
+                src="https://www.google.com/maps?q=Bierakademie%20in%20der%20Apothek%2C%20Kirchstra%C3%9Fe%2014%2C%2073033%20G%C3%B6ppingen&output=embed"
+                title="Anfahrt zur Bierakademie in der Kirchstraße 14 in Göppingen"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     FINAL CTA
+================================================== -->
+
+<section class="home-cta">
+
+    <div class="container home-cta-inner">
+
+        <div>
+
+            <p class="section-kicker section-kicker-light">
+                BIERAKADEMIE GÖPPINGEN
+            </p>
+
+
+            <h2>
+                Komm vorbei<br>
+                und entdecke mehr.
+            </h2>
+
+        </div>
+
+
+        <a
+            class="button button-primary"
+            href="{% url 'website:contact' %}"
+        >
+            Besuch planen
+        </a>
+
+    </div>
+
+</section>
+
+
+{% endblock %}
