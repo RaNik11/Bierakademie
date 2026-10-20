@@ -1,0 +1,1172 @@
+[
+  {
+    "pk": 1,
+    "name": "Hefe",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 2,
+    "name": "Gold, Halbe",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 3,
+    "name": "Pils",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 4,
+    "name": "Russ Mixbier",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 5,
+    "name": "Radler Mixbier",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 6,
+    "name": "Cola Weizen Mixbier",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 7,
+    "name": "Original",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 8,
+    "name": "Helles",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 9,
+    "name": "Helles",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 10,
+    "name": "Bügel Premium",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 11,
+    "name": "Edelstoff",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 12,
+    "name": "Hefe TAP 1",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 13,
+    "name": "Original TAP 7",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 14,
+    "name": "Hefe",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 15,
+    "name": "Hefe Original",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 16,
+    "name": "Hefe",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 17,
+    "name": "Hefe",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 18,
+    "name": "Zwickl Unfiltriert",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 19,
+    "name": "Kristall TAP 2",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 20,
+    "name": "Kristall",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 21,
+    "name": "Kristall",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 22,
+    "name": "Kristall",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 23,
+    "name": "Kristall",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 24,
+    "name": "Brunnenbier",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 25,
+    "name": "Tannenzäpfle Pils",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 26,
+    "name": "Pils",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 27,
+    "name": "Pils",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 28,
+    "name": "Goldstoff Bügelflasche",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 29,
+    "name": "Bügelflasche",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 30,
+    "name": "Alt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 31,
+    "name": "Pilsner",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 32,
+    "name": "Original",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 33,
+    "name": "Dunkel",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 34,
+    "name": "Dunkel",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 35,
+    "name": "Dunkel Hefe",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 36,
+    "name": "Schottenbock",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 37,
+    "name": "Premium Silver Label — Jahrgangsbieredition 2019",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 38,
+    "name": "Aventinus Eisbock",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 39,
+    "name": "Black Shark",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 40,
+    "name": "Imperial IPA",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 41,
+    "name": "Aventinus Doppelbock TAP 6",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 42,
+    "name": "Hopfenweiße TAP 5",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 43,
+    "name": "Doppelbock",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 44,
+    "name": "Bergbock Hell",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 45,
+    "name": "Salvator",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 46,
+    "name": "Korbinian",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 47,
+    "name": "Hefe Alkoholfrei",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 48,
+    "name": "Hefe Alkoholfrei",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 49,
+    "name": "0,0",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 50,
+    "name": "Blue",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 51,
+    "name": "Gentleman Jack",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 52,
+    "name": "Nr. 7",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 53,
+    "name": "Honey Whiskey",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 54,
+    "name": "95 Rye Frontier Whiskey",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 55,
+    "name": "Straight Bourbon",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 56,
+    "name": "Bourbon Whiskey",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 57,
+    "name": "Single Malt Whisky",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 58,
+    "name": "Malt Whisky Sherry Single",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 59,
+    "name": "Sherry Cask Matured Single Malt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 60,
+    "name": "Aged 5 Years",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 61,
+    "name": "Peated Single Malt Whiskey",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 62,
+    "name": "Ireland's Legendary Honey Liqueur",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 63,
+    "name": "Single Pot Still",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 64,
+    "name": "Single Malt Whiskey",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 65,
+    "name": "Original",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 66,
+    "name": "Speyside Single Malt Whisky",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 67,
+    "name": "Single Malt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 68,
+    "name": "Islay Single Malt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 69,
+    "name": "Single Malt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 70,
+    "name": "The Isle of Skye Liqueur",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 71,
+    "name": "Single Malt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 72,
+    "name": "Gold Label Reserve",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 73,
+    "name": "Red Label Reserve",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 74,
+    "name": "Blended Whisky",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 75,
+    "name": "Golden Selection Blended Whisky",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 76,
+    "name": "Finest Blended Whisky",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 77,
+    "name": "Solera Gran Reserva",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 78,
+    "name": "Small Batch",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 79,
+    "name": "Gran Reserva",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 80,
+    "name": "Coconut Rum",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 81,
+    "name": "Elixir",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 82,
+    "name": "Aged 7 Years",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 83,
+    "name": "Aniversario Reserva Exclusiva",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 84,
+    "name": "7 Years",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 85,
+    "name": "3 Years",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 86,
+    "name": "Rum (Sorte prüfen)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 87,
+    "name": "White Rum",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 88,
+    "name": "Rum 80",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 89,
+    "name": "Grand Very Old",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 90,
+    "name": "7 Sterne",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 91,
+    "name": "3 Sterne",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 92,
+    "name": "Very Special",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 93,
+    "name": "Uralt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 94,
+    "name": "Weinbrand (Sorte prüfen)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 95,
+    "name": "Gin",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 96,
+    "name": "Wodka",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 97,
+    "name": "Wodka (Roter)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 98,
+    "name": "Wodka (Schwarzer)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 99,
+    "name": "Wodka (Grüner)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 100,
+    "name": "Ouzo",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 101,
+    "name": "Himbeergeist",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 102,
+    "name": "Kirschwasser Schwarzwälder",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 103,
+    "name": "Obstler",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 104,
+    "name": "Williams",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 105,
+    "name": "Doppelkorn",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 106,
+    "name": "Marillen select",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 107,
+    "name": "Grappa Destillato",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 108,
+    "name": "Grappa Invecchiata",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 109,
+    "name": "Tequila Silver",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 110,
+    "name": "Tequila Reposado",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 111,
+    "name": "Absinth 66 ★",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 112,
+    "name": "Amaretto",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 113,
+    "name": "Viagra Schnaps Spezial",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 114,
+    "name": "Gletscherwasser",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 115,
+    "name": "Banane",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 116,
+    "name": "Batida de Coco",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 117,
+    "name": "Coconut",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 118,
+    "name": "Irish Cream",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 119,
+    "name": "Goldwasser",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 120,
+    "name": "Edelkirsch",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 121,
+    "name": "Coffee Liqueur",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 122,
+    "name": "Sambuca",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 123,
+    "name": "Pfefferminz",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 124,
+    "name": "Bärwurz",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 125,
+    "name": "Kräuterlikör",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 126,
+    "name": "Kräuterbitter",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 127,
+    "name": "Amaro",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 128,
+    "name": "Amaro",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 129,
+    "name": "Bianco",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 130,
+    "name": "Tocco Rosso",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 131,
+    "name": "Original",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 132,
+    "name": "Schwäbischer Landwein",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 133,
+    "name": "Gr. Merlot Rotwein Agioritiko",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 134,
+    "name": "Rotwein",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 135,
+    "name": "Mavrodaphne Likörwein",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 136,
+    "name": "Rosé-Schillerwein",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 137,
+    "name": "Riesling Weißwein",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 138,
+    "name": "Retsina",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 139,
+    "name": "Weinschorle Weiß / Rot / Rosé",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 140,
+    "name": "Mavrodaphne Schorle",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 141,
+    "name": "Aperol Spritz mit Sekt Yescovino",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 142,
+    "name": "Hugo",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 143,
+    "name": "Korea",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 144,
+    "name": "Glühwein",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 145,
+    "name": "Sekt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 146,
+    "name": "Sektschorle Yescovino",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 147,
+    "name": "Prosecco",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 148,
+    "name": "Proseccoschorle",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 149,
+    "name": "Sekt",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 150,
+    "name": "Champagner Brut",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 151,
+    "name": "Merlot Rotwein (vegan, alkoholfrei)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 152,
+    "name": "Schorle Merlot Carl Jung",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 153,
+    "name": "Sekt Sparkling Rosé (alkoholfrei)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 154,
+    "name": "Sekt Schorle Sparkling Rosé",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 155,
+    "name": "Original",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 156,
+    "name": "Fanta",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 157,
+    "name": "Zero",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 158,
+    "name": "Spezi",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 159,
+    "name": "Energy Drink",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 160,
+    "name": "Bitter Lemon",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 161,
+    "name": "Tonic Water",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 162,
+    "name": "Zitronenlimonade",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 163,
+    "name": "Sprudelwasser filtriert",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 164,
+    "name": "Stilles Wasser filtriert",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 165,
+    "name": "Orangensaft",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 166,
+    "name": "Apfelsaft",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 167,
+    "name": "Johannisbeer-Nektar",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 168,
+    "name": "Kirsch-Nektar",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 169,
+    "name": "Alle Saftschorlen",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 170,
+    "name": "Aperol (alkoholfrei)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 171,
+    "name": "Cranberry",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 172,
+    "name": "Cranberry",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 173,
+    "name": "Sangrita Ricante",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 174,
+    "name": "Campari-Cocktail (alkoholfrei)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 175,
+    "name": "Aperol Spritz (alkoholfrei)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 176,
+    "name": "Cranberry-Cocktail",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 177,
+    "name": "Amaretto-Cocktail (alkoholfrei)",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 178,
+    "name": "Grenadine Granatapfel",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 179,
+    "name": "Sunshine Tee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 180,
+    "name": "Kamillentee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 181,
+    "name": "Pfefferminztee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 182,
+    "name": "Grüner Tee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 183,
+    "name": "Hagebuttentee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 184,
+    "name": "Schwarztee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 185,
+    "name": "Früchtetee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 186,
+    "name": "Minze-Ingwer Tee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 187,
+    "name": "Tasse Kaffee",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 188,
+    "name": "Espresso",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 189,
+    "name": "Wurstsalat",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 190,
+    "name": "Landjäger Delikatesse",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 191,
+    "name": "Großer Veganer Teller",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 192,
+    "name": "Veganer Teller",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 193,
+    "name": "Großer Vegetarischer Teller",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 194,
+    "name": "Vegetarischer Teller",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  },
+  {
+    "pk": 195,
+    "name": "Mezze Großer Spezialteller",
+    "geschmack_kurz": "",
+    "beschreibung": ""
+  }
+]

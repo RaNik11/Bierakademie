@@ -4,6 +4,7 @@ Django settings for the Bierakademie project.
 Development settings for:
 Bierakademie in der Apothek, Göppingen.
 """
+
 import os
 from pathlib import Path
 
@@ -19,8 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security
 # ---------------------------------------------------------------------
 
-# Development only.
-# Before deployment this will be moved to an environment variable.
 SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 DEBUG = True
@@ -155,7 +154,7 @@ USE_TZ = True
 # Static files
 # ---------------------------------------------------------------------
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
@@ -166,7 +165,7 @@ STATICFILES_DIRS = [
 # Media files
 # ---------------------------------------------------------------------
 
-MEDIA_URL = "media/"
+MEDIA_URL = "/media/"
 
 MEDIA_ROOT = BASE_DIR / "media"
 

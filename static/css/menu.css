@@ -666,30 +666,6 @@
   transition: opacity var(--karte-transition), transform var(--karte-transition);
 }
 
-.drink-brand {
-  display: block;
-  max-width: calc(100% - 20px);
-  margin-bottom: 5px;
-  color: var(--panel-accent);
-  font-size: .67rem;
-  font-weight: 800;
-  line-height: 1.4;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-  overflow-wrap: break-word;
-}
-
-.drink-name {
-  display: block;
-  max-width: 100%;
-  color: var(--panel-title);
-  font-family: var(--karte-serif);
-  font-size: 1.16rem;
-  font-weight: 700;
-  line-height: 1.25;
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
 
 .drink-meta {
   display: block;
@@ -1246,4 +1222,65 @@ button.drink-item::before {
   .drink-item:hover {
     transform: none;
   }
+}
+/* ==========================================
+   DRINK CARDS — BRAND FIRST
+========================================== */
+
+.drink-brand {
+    display: block;
+    max-width: 100%;
+
+    margin-bottom: 7px;
+
+    color: var(--panel-title);
+
+    font-family: var(--karte-serif);
+    font-size: clamp(1.35rem, 1.8vw, 1.65rem);
+    font-weight: 700;
+
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+
+    text-transform: none;
+
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.drink-name {
+    display: block;
+    max-width: 100%;
+
+    color: var(--panel-accent);
+
+    font-family: var(--karte-sans, Arial, Helvetica, sans-serif);
+    font-size: 0.91rem;
+    font-weight: 700;
+
+    line-height: 1.45;
+    letter-spacing: 0.015em;
+
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.drink-meta {
+    display: block;
+    margin-top: 6px;
+
+    color: var(--panel-muted);
+
+    font-size: 0.76rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .drink-brand {
+        font-size: 1.4rem;
+    }
+
+    .drink-name {
+        font-size: 0.88rem;
+    }
 }

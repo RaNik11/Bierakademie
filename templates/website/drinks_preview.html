@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Getränkekarte | Bierakademie Göppingen{% endblock %}
+{% block meta_description %}Entdecke die Getränkekarte der Bierakademie in der Apothek, Göppingen: Bier, Spirituosen, alkoholfreie Getränke und mehr.{% endblock %}
+{% block body_class %}menu-page menu-preview-page{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/menu.css' %}">
+<link rel="stylesheet" href="{% static 'css/menu_preview.css' %}">
+{% endblock %}
+
+{% block content %}
+{% if menu_preview %}
+<div class="menu-preview-banner" role="status">
+    <strong>INTERNE MENÜ-VORSCHAU</strong>
+    <span>{{ menu_item_count }} Positionen einschließlich Entwürfen · Angaben vor Veröffentlichung prüfen.</span>
+    <a href="{% url 'website:drinks' %}">Zur bisherigen Getränkekarte</a>
+</div>
+{% endif %}
+
+<section class="karte-hero menu-catalog-hero">
+    <div class="karte-glow karte-glow-one" aria-hidden="true"></div>
+    <div class="karte-glow karte-glow-two" aria-hidden="true"></div>
+    <div class="container karte-hero-grid">
+        <div class="karte-hero-copy">
+            <span class="karte-eyebrow">BIERKULTUR · VIELFALT · ENTDECKUNGEN</span>
+            <h1><span class="karte-brand-main">Bierakademie</span><span class="karte-brand-sub">in der Apothek</span></h1>
+            <p class="karte-page-title">Unsere Getränkekarte</p>
+            <p class="karte-hero-text">Entdecke vertraute Favoriten und neue Lieblingsgetränke. Tippe auf ein Getränk, um mehr zu erfahren.</p>
+            <div class="karte-hero-actions">
+                <a class="karte-primary" href="#menu-preview-catalog">Getränke entdecken</a>
+                <span class="karte-address">Kirchstraße 14 · 73033 Göppingen</span>
+            </div>
+        </div>
+        <div class="karte-emblem-wrap">
+            <img class="karte-real-logo" src="{% static 'img/bierakademie-emblem.png' %}"
+                 alt="Emblem der Bierakademie" width="360" height="360" decoding="async">
+        </div>
+    </div>
+</section>
+
+{% if menu_sections or new_items %}
+<nav class="karte-categories" aria-label="Getränkekategorien">
+    <div class="container karte-categories-inner">
+        {% if new_items %}
+        <a href="#neu"><span aria-hidden="true">★</span>Neu im Sortiment</a>
+        {% endif %}
+        {% for section in menu_sections %}
+        <a href="#{{ section.category.slug }}"><span>{{ forloop.counter|stringformat:"02d" }}</span>{{ section.category.name }}</a>
+        {% endfor %}
+    </div>
+</nav>
+{% endif %}
+
+<div id="menu-preview-catalog">
+    {% if new_items %}
+    <section class="karte-section menu-new-section" id="neu" aria-labelledby="menu-new-heading">
+        <div class="container">
+            <header class="karte-section-head">
+                <div class="karte-section-number" aria-hidden="true">★</div>
+                <div>
+                    <span class="karte-label">FRISCH EINGETROFFEN</span>
+                    <h2 id="menu-new-heading">Neu im Sortiment</h2>
+                    <p>Neue Entdeckungen in der Bierakademie – frisch in unserer Auswahl.</p>
+                </div>
+            </header>
+            <div class="menu-new-container">
+                <div class="menu-products-grid" data-menu-grid>
+                    {% for item in new_items %}
+                    {% include "website/_menu_product_card.html" with item=item menu_preview=menu_preview only %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% for section in menu_sections %}
+    <section class="karte-section karte-light menu-preview-panel" id="{{ section.category.slug }}">
+        <div class="container">
+            <header class="karte-section-head">
+                <div class="karte-section-number">{{ forloop.counter|stringformat:"02d" }}</div>
+                <div>
+                    {% if section.category.subtitle %}<span class="karte-label">{{ section.category.subtitle }}</span>{% endif %}
+                    <h2>{{ section.category.name }}</h2>
+                    {% if section.category.introduction %}<p>{{ section.category.introduction }}</p>{% endif %}
+                </div>
+            </header>
+
+            {% if section.groups %}
+            <div class="menu-preview-groups">
+                {% for entry in section.groups %}
+                {% with group=entry.group %}
+                <article class="menu-preview-group menu-theme-{{ group.theme }}" aria-labelledby="group-{{ group.pk }}">
+                    <header class="menu-preview-group-header">
+                        <div>
+                            {% if group.eyebrow %}<span class="karte-group-label">{{ group.eyebrow }}</span>{% endif %}
+                            <h3 id="group-{{ group.pk }}" class="menu-preview-group-title">{{ group.name }}</h3>
+                        </div>
+                        <span class="menu-preview-group-count">{{ entry.items|length }} Position{{ entry.items|length|pluralize:"en" }}</span>
+                    </header>
+                    {% if group.description %}
+                    <details class="menu-preview-group-notes">
+                        <summary>Hinweise zur Auswahl</summary>
+                        <p>{{ group.description|linebreaksbr }}</p>
+                    </details>
+                    {% endif %}
+                    <div class="menu-products-grid" data-menu-grid>
+                        {% for item in entry.items %}
+                        {% include "website/_menu_product_card.html" with item=item menu_preview=menu_preview only %}
+                        {% endfor %}
+                    </div>
+                </article>
+                {% endwith %}
+                {% endfor %}
+            </div>
+            {% elif section.category.slug == 'zigarren' %}
+            <div class="menu-preview-empty">Zigarren und Zigarillos aus unserem Humidor – die aktuelle Auswahl gibt es auf Anfrage beim Personal.</div>
+            {% endif %}
+
+            {% if section.category.notice %}<p class="menu-preview-note">{{ section.category.notice }}</p>{% endif %}
+        </div>
+    </section>
+    {% empty %}
+        {% if not new_items %}
+        <section class="karte-section"><div class="container">
+            <div class="menu-preview-empty">Hier sind derzeit noch keine Menüpositionen hinterlegt.</div>
+        </div></section>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<section class="menu-footer-cta">
+    <div class="container">
+        <p class="section-kicker">BIERAKADEMIE</p>
+        <span class="menu-footer-subbrand">in der Apothek · Göppingen</span>
+        <h2>Die beste Empfehlung<br>entsteht im Gespräch.</h2>
+        <p>Komm vorbei, entdecke neue Favoriten und erlebe Bierkultur mit Charakter.</p>
+        <a class="button button-dark" href="{% url 'website:contact' %}">Besuch planen</a>
+    </div>
+</section>
+
+<script src="{% static 'js/menu_preview.js' %}" defer></script>
+{% endblock %}

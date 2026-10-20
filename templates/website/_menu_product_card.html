@@ -1,0 +1,558 @@
+
+{% load static %}
+
+<button
+    class="menu-drink-card{% if not item.is_available %} is-unavailable{% endif %}"
+    type="button"
+    data-menu-detail="menu-detail-{{ item.pk }}"
+    aria-controls="menu-expanded-{{ item.pk }}"
+    aria-expanded="false"
+    aria-label="Mehr zu {% if item.brand %}{{ item.brand.name }} {% endif %}{{ item.name }} anzeigen"
+>
+
+    <span
+        class="menu-card-media"
+        style="aspect-ratio: 4 / 3; isolation: isolate;"
+    >
+
+        {% if item.image %}
+
+        <span
+            aria-hidden="true"
+            style="
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                display: block;
+                background: linear-gradient(
+                    120deg,
+                    #726055 0%,
+                    #a18b73 48%,
+                    #6c5144 100%
+                );
+                pointer-events: none;
+            "
+        ></span>
+
+        <img
+            class="menu-card-photo-main"
+            src="{{ item.image_card_url }}"
+            alt="{% if item.brand %}{{ item.brand.name }} {% endif %}{{ item.name }}"
+            loading="lazy"
+            decoding="async"
+            width="560"
+            height="360"
+            style="
+                position: absolute;
+                inset: 0;
+                z-index: 1;
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-width: none;
+                max-height: none;
+                padding: 5px;
+                object-fit: contain;
+                object-position: center;
+                pointer-events: none;
+            "
+        >
+
+        {% elif item.brand and item.brand.logo %}
+
+        <span class="menu-card-logo-backdrop">
+            <img
+                src="{{ item.brand.logo.url }}"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="200"
+                height="200"
+            >
+        </span>
+
+        {% else %}
+
+        <span
+            class="menu-card-placeholder"
+            aria-hidden="true"
+        >
+            <span class="menu-placeholder-mark">BA</span>
+            <small>BIERAKADEMIE</small>
+        </span>
+
+        {% endif %}
+
+        {% if item.is_new %}
+        <span class="menu-card-ribbon">NEU</span>
+        {% endif %}
+
+        {% if not item.is_available %}
+        <span class="menu-card-ribbon menu-card-ribbon--muted">
+            Nicht verfügbar
+        </span>
+        {% endif %}
+
+    </span>
+
+
+    <span class="menu-card-copy">
+
+        {% if item.brand %}
+
+        <span
+            class="menu-card-brand"
+            style="
+                display: block !important;
+                width: fit-content;
+                max-width: 100%;
+                margin-bottom: 7px !important;
+                padding-bottom: 5px;
+
+                color: #194332 !important;
+
+                font-family: Georgia, 'Times New Roman', serif !important;
+                font-size: 22px !important;
+                font-weight: 700 !important;
+                line-height: 1.25 !important;
+
+                letter-spacing: 0.012em !important;
+                text-transform: none !important;
+
+                border-bottom: 2px solid #bd9857;
+
+                overflow-wrap: anywhere;
+            "
+        >
+            {{ item.brand.name }}
+        </span>
+
+        <strong
+            class="menu-card-name"
+            style="
+                display: block !important;
+                min-width: 0;
+
+                color: #754923 !important;
+
+                font-family: Arial, Helvetica, sans-serif !important;
+                font-size: 17px !important;
+                font-weight: 600 !important;
+                line-height: 1.35 !important;
+
+                letter-spacing: 0 !important;
+
+                overflow-wrap: anywhere;
+            "
+        >
+            {{ item.name }}
+        </strong>
+
+        {% else %}
+
+        <span
+            class="menu-card-brand"
+            style="
+                display: block !important;
+                margin-bottom: 5px !important;
+
+                color: #997746 !important;
+
+                font-family: Arial, Helvetica, sans-serif !important;
+                font-size: 12px !important;
+                font-weight: 800 !important;
+                line-height: 1.35 !important;
+
+                letter-spacing: 0.07em !important;
+                text-transform: uppercase !important;
+            "
+        >
+            Bierakademie
+        </span>
+
+        <strong
+            class="menu-card-name"
+            style="
+                display: block !important;
+                min-width: 0;
+
+                color: #123b2a !important;
+
+                font-family: Georgia, serif !important;
+                font-size: 23px !important;
+                font-weight: 700 !important;
+                line-height: 1.2 !important;
+
+                letter-spacing: -0.015em !important;
+
+                overflow-wrap: anywhere;
+            "
+        >
+            {{ item.name }}
+        </strong>
+
+        {% endif %}
+
+
+        {% if item.geschmack_kurz %}
+
+        <span
+            class="menu-card-taste"
+            title="{{ item.geschmack_kurz|title }}"
+        >
+            {{ item.geschmack_kurz|title }}
+        </span>
+
+        {% endif %}
+
+
+        <span class="menu-card-facts">
+
+            {% with first_price=item.menu_prices|first %}
+
+                {% if first_price and first_price.size_label != 'Standard' %}
+
+                <span class="menu-card-size">
+                    {{ first_price.size_label }}
+                </span>
+
+                {% endif %}
+
+            {% endwith %}
+
+            {% if item.alcohol_percent != None %}
+
+            <span class="menu-card-alcohol">
+                {{ item.alcohol_percent|floatformat:1 }} % vol.
+            </span>
+
+            {% endif %}
+
+        </span>
+
+
+        <span class="menu-card-bottom">
+
+            {% with first_price=item.menu_prices|first %}
+
+                {% if first_price %}
+
+                <strong class="menu-card-price">
+                    {{ first_price.price_eur|floatformat:2 }} €
+                </strong>
+
+                {% else %}
+
+                <span class="menu-card-price-unset">
+                    Preis auf Anfrage
+                </span>
+
+                {% endif %}
+
+            {% endwith %}
+
+            <span
+                class="menu-card-more"
+                aria-hidden="true"
+            >
+                Details <span>↓</span>
+            </span>
+
+        </span>
+
+
+        {% if menu_preview and not item.is_published %}
+
+        <span class="menu-card-draft">
+            Interner Entwurf
+        </span>
+
+        {% endif %}
+
+    </span>
+
+</button>
+
+
+
+<template id="menu-detail-{{ item.pk }}">
+
+    <div class="menu-expanded-image">
+
+        {% if item.image %}
+
+        <img
+            src="{{ item.image_detail_url }}"
+            alt="{{ item.name }} – größere Ansicht"
+            decoding="async"
+            width="900"
+            height="900"
+        >
+
+        {% elif item.brand and item.brand.logo %}
+
+        <img
+            class="menu-expanded-brand-image"
+            src="{{ item.brand.logo.url }}"
+            alt="Logo von {{ item.brand.name }}"
+            decoding="async"
+            width="360"
+            height="360"
+        >
+
+        {% else %}
+
+        <span
+            class="menu-card-placeholder menu-expanded-placeholder"
+            aria-hidden="true"
+        >
+            <span class="menu-placeholder-mark">BA</span>
+            <small>BIERAKADEMIE</small>
+        </span>
+
+        {% endif %}
+
+    </div>
+
+
+    <div class="menu-expanded-info">
+
+        <span class="menu-expanded-kicker">
+            {{ item.group.category.name }} · {{ item.group.name }}
+        </span>
+
+
+        {% if item.brand %}
+
+        <span class="menu-expanded-brand">
+            {{ item.brand.name }}
+        </span>
+
+        {% endif %}
+
+
+        <h3 class="menu-expanded-title">
+            {{ item.name }}
+        </h3>
+
+
+        <div class="menu-expanded-facts">
+
+            {% if item.production_location %}
+            <span>{{ item.production_location }}</span>
+            {% endif %}
+
+            {% if item.alcohol_percent != None %}
+
+            <span>
+                Alk. {{ item.alcohol_percent|floatformat:1 }} % vol.
+            </span>
+
+            {% endif %}
+
+            {% if menu_preview and not item.is_published %}
+            <span>Interner Entwurf</span>
+            {% endif %}
+
+            {% if not item.is_available %}
+            <span>Nicht verfügbar</span>
+            {% endif %}
+
+        </div>
+
+
+        {% if item.geschmack_kurz %}
+
+        <p class="menu-expanded-taste">
+            <strong>Geschmack:</strong>
+            {{ item.geschmack_kurz|title }}
+        </p>
+
+        {% endif %}
+
+
+        {% if item.beschreibung %}
+
+        <div class="menu-expanded-description">
+            {{ item.beschreibung|linebreaksbr }}
+        </div>
+
+        {% elif item.official_description %}
+
+        <div class="menu-expanded-description">
+            {{ item.official_description|linebreaksbr }}
+        </div>
+
+        {% elif item.printed_note %}
+
+        <div class="menu-expanded-description">
+            {{ item.printed_note|linebreaksbr }}
+        </div>
+
+        {% elif item.ingredients %}
+
+        <div class="menu-expanded-description">
+            {{ item.ingredients|linebreaksbr }}
+        </div>
+
+        {% else %}
+
+        <p class="menu-expanded-description menu-expanded-description--empty">
+            Weitere Informationen folgen.
+        </p>
+
+        {% endif %}
+
+
+        {% if item.menu_prices %}
+
+        <div
+            class="menu-expanded-prices"
+            aria-label="Größen und Preise"
+        >
+
+            {% for option in item.menu_prices %}
+
+            <div class="menu-expanded-price-row">
+
+                <span>
+
+                    {% if option.size_label == 'Standard' %}
+                        Preis
+                    {% else %}
+                        {{ option.size_label }}
+                    {% endif %}
+
+                    {% if not option.is_available %}
+                    <small>
+                        · derzeit nicht verfügbar
+                    </small>
+                    {% endif %}
+
+                </span>
+
+                <strong>
+                    {{ option.price_eur|floatformat:2 }} €
+                </strong>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        {% endif %}
+
+
+        {% if item.ingredients and item.beschreibung or item.ingredients and item.official_description or item.ingredients and item.printed_note %}
+
+        <details class="menu-expanded-extra">
+
+            <summary>Zutaten</summary>
+
+            <p>
+                {{ item.ingredients|linebreaksbr }}
+            </p>
+
+        </details>
+
+        {% endif %}
+
+
+        {% if item.allergen_codes or item.additive_codes %}
+
+        <details class="menu-expanded-extra">
+
+            <summary>Allergene &amp; Zusatzstoffe</summary>
+
+            {% if item.allergen_codes %}
+
+            <p>
+                Allergencodes: {{ item.allergen_codes }}
+            </p>
+
+            {% endif %}
+
+            {% if item.additive_codes %}
+
+            <p>
+                Zusatzstoffcodes: {{ item.additive_codes }}
+            </p>
+
+            {% endif %}
+
+        </details>
+
+        {% endif %}
+
+
+        {% if item.product_history or item.brand and item.brand.history %}
+
+        <details class="menu-expanded-extra">
+
+            <summary>Mehr zur Geschichte</summary>
+
+            {% if item.product_history %}
+
+            <p>
+                {{ item.product_history|linebreaksbr }}
+            </p>
+
+            {% endif %}
+
+
+            {% if item.product_history_source_url %}
+
+            <a
+                href="{{ item.product_history_source_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Quelle zur Produktgeschichte ↗
+            </a>
+
+            {% endif %}
+
+
+            {% if item.brand and item.brand.history %}
+
+            <p>
+                {{ item.brand.history|linebreaksbr }}
+            </p>
+
+            {% endif %}
+
+
+            {% if item.brand and item.brand.history_source_url %}
+
+            <a
+                href="{{ item.brand.history_source_url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Quelle zum Hersteller ↗
+            </a>
+
+            {% endif %}
+
+        </details>
+
+        {% endif %}
+
+
+        {% if item.official_description and item.official_source_url %}
+
+        <a
+            class="menu-expanded-source"
+            href="{{ item.official_source_url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Offizielle Produktinformationen ↗
+        </a>
+
+        {% endif %}
+
+    </div>
+
+</template>

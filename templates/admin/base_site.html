@@ -1,0 +1,22 @@
+
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{% if title %}{{ title }} | {% endif %}Bierakademie Verwaltung{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/bierakademie_admin.css' %}">
+{% endblock %}
+
+{% block branding %}
+<div id="site-name" class="ba-admin-brand">
+    <a href="{% url 'admin:index' %}" aria-label="Bierakademie Verwaltung – Startseite">
+        <img src="{% static 'img/bierakademie-emblem.png' %}" width="48" height="48" alt="">
+        <span>
+            <strong>Bierakademie</strong>
+            <small>in der Apothek · Verwaltung</small>
+        </span>
+    </a>
+</div>
+{% endblock %}
